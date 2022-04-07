@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Creating Navbar -->
+    <div class="nav">
+        <ul>
+            <li class="Logo">
+                <img src="/Images/logo.png" alt="Company Logo">
+            </li>
+            <div class="nav-item-1 Links">
+                <a class="Mobilecontainer">Mobile</a>
+            </div>
+            <div class="nav-item-2 Links">
+                <a href="#">Laptops</a>
+            </div>
+            <div class="nav-item-3 Links">
+                <a href="#">EarPhones</a>
+            </div>
+            <div class="nav-item-4 Links">
+                <a href="#">SmartWatch</a>
+            </div>
+            <div class="nav-item-5 Links">
+                <a href="#">Camera</a>
+            </div>
+            <div class="nav-item-6 Links">
+                <a href="#">Monitor</a>
+            </div>
+            <div class="Search">
+                <input type="text" placeholder="Search for products,brands and more">
+            </div>
+            <div class="WishList Links ">
+                <img src="/Images/WishList.png" class="img-nav">
+                Wish List
+            </div>
+            <div class="Cart Links" id="mybtn">
+                <img src="/Images/icons8-buying.gif" class="img-nav" id="img-Cart">
+
+                Cart
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="SignIn Links">
+                <img src="Images/Profile.png" class="img-nav">
+                Sign In
+            </div>
+        </ul>
+    </div>
+    <!-- Creating a image slide show for menu -->
+    <div class="slideshow_container">
+        <div class="myslides fade">
+            <img src="/Images/Menu Images/Pic-1.jpg" style="width: 100%;">
+            <div class="Text">Item 1</div>
+        </div>
+        <div class="myslides fade">
+            <img src="/Images/Menu Images/Pic-2.jpg" style="width: 100%; height: 200%">
+            <div class="Text">Item 2</div>
+        </div>
+        <div class="myslides fade">
+            <img src="/Images/Menu Images/Boat-Watch-CLP-Banner-09-03-2022.jpg" style="width: 100%;">
+            <div class="Text">Item 3</div>
+        </div>
+        <div class="myslides fade">
+            <img src="/Images/Menu Images/1500x300.jpg" style="width: 100%;">
+            <div class="Text">Item 4</div>
+        </div>
+        <div class="myslides fade">
+            <img src="/Images/Menu Images/mxw_2048,f_auto (1).avif" style="width: 100%;">
+            <div class="Text">Item 5</div>
+        </div>
+        <div class="myslides fade">
+            <img src="/Images/Menu Images/Monitors_1500X300.jpg" style="width: 100%;">
+            <div class="Text">Item 6</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+            < </a>
+                <a class="next" onclick="plusSlides(1)">></a>
+    </div>
+    <div class="item_containers">
+        <div class="Mobilecontainer">
+            <div class="img-container-mobile">
+                <img src="/Images/Mobile_Menu.gif" width="100%">
+            </div>
+            <h1>Deal Of The Day</h1>
+            <div class="mobileoptions">
+                <div class="mobile" id="Mobile-1">
+                    <img src="/Images/Mobiles/iphone-13-pro-graphite-select.png" alt="iPhone 13" style="width:100%">
+                    <h1>iPhone 13</h1>
+                    <p class="price">&#8377 1000</p>
+                    <p>realme narzo 50 in India is equiped withMediaTek Helio G96 Gaming Processor, 120Hz Ultra Smooth Display, 33W Dart Charge and 5000mAh Massive Battery</p>
+                    <p><button  onClick='add_item_cart(this.id)' class="btn_1">Add to Cart</button></p>
+                </div>
+                
+                <div class="mobile" id="Mobile-2">
+                    <img src="/Images/Mobiles/61PDbUd1VaL._SX679_.jpg" width="380" height="auto">
+                    OnePlus 9R 5G
+                    <ul>
+                        <li>A15 Bionic Chip</li>
+                        <li>Up to 19 hours of video playback</li>
+                        <li>Ceramic Shield Front</li>
+                        <li>New 16 core GPU</li>
+                        <li>Price:700</li>
+                        <button class="btn_1" id="mobile_btn_2" onClick='add_item_cart(this.id)'> Add to Cart</button>
+                    </ul>
+                </div>
+                <div class="mobile" id="Mobile-3">
+                    <img src="/Images/Mobiles/61O45C5qASL._AC_SX679_.jpg" height="auto" width="300">
+                    SAMSUNG Galaxy S21 Ultra 5G
+                    <ul>
+                        <li>A15 Bionic Chip</li>
+                        <li>Up to 19 hours of video playback</li>
+                        <li>Ceramic Shield Front</li>
+                        <li>New 16 core GPU</li>
+                        <li>Price:500</li>
+                        <button class="btn_1" id="mobile_btn_3" onClick='add_item_cart(this.id)'> Add to Cart</button>
+                    </ul>
+                </div>
+                <div class="mobile" id="Mobile-4">
+                    <img src="/Images/Mobiles/711dWcQCoLL._SY879_.jpg" height="auto" width="200">
+
+                </div>
+                <div class="mobile" id="Mobile-5">
+                <img src="/Images/Mobiles/71ZPpnZ3DwL._SX679_.jpg" height="auto" width="200">
+                </div>
+                <!-- <h2 style="text-align:center">Product Card</h2> -->
+                <!-- <div class="card"> -->
+                <div class="mobile" id="Mobile-5">
+                    <img src="/Images/Mobiles/71ZPpnZ3DwL._SX679_.jpg" alt="Realme narzo50" height="auto" width="200">
+                    <h1>Realme narzo50 </h1>
+                    <p class="price">$19.99</p>
+                    <p>realme narzo 50 in India is equiped withMediaTek Helio G96 Gaming Processor, 120Hz Ultra Smooth Display, 33W Dart Charge and 5000mAh Massive Battery</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("myslides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        // modal
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("img-Cart");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function add_item_cart(clicked_id) {
+            alert(clicked_id);
+
+        }
+    </script>
+
+</body>
+
+</html>
